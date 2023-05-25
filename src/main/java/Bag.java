@@ -62,7 +62,7 @@ public abstract class Bag {
      * TODO: Create a setter function called setColor which sets the
      *       color of this bag to the given color.
      */
-    public void setcolor(String color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
