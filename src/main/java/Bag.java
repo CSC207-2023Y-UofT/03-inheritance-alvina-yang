@@ -63,7 +63,7 @@ public abstract class Bag {
      *       color of this bag to the given color.
      */
     public void setcolor(String color) {
-        this.color = color
+        this.color = color;
     }
 
 
