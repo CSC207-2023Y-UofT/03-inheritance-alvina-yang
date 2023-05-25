@@ -80,8 +80,12 @@ public abstract class Bag {
      */
     public boolean addItem(String item){
         if (numberOfContents < capacity){
-            contents = Arrays.copyOf(contents, numberOfContents + 1);
-            contents[numberOfContents] = item;
+            String[] newContents = new String[numberOfContents + 1];
+            for (int i = 0; i < numberOfContents; i++) {
+                newContents[i] = contents[i];
+            }
+            newContents[numberOfContents] = item;
+            contents = newContents;
             numberOfContents++;
             return true;
         } else {
