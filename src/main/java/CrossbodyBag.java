@@ -31,7 +31,7 @@
  *       See the tests in test/CrossBodyBagTest.java for examples.
  */
 public class CrossbodyBag extends Bag {
-    private int numberOfStraps;
+    int numberOfStraps;
 
     public CrossbodyBag(String color, int capacity, int numberOfStraps) {
         super(color, capacity);
@@ -44,7 +44,7 @@ public class CrossbodyBag extends Bag {
 
     @Override
     public void enhance(){
-        super.increaseCapacity(2);
+        this.increaseCapacity(2);
     }
 
     @Override
